@@ -58,9 +58,11 @@ const AcceptBitcoinSection = () => {
                 {/* Square Logo */}
                 <Box mb={{ base: "30px", md: "40px" }}>
                     <Image
-                        src="/assets/CompanyImages/squareLogo.png"
+                        src="/assets/CompanyImages/squareLogo.svg"
                         alt="Square"
-                        maxW="180px"
+                        maxW="300px"
+                        width="210px"
+                        filter="brightness(0)"
                         h="auto"
                     />
                 </Box>

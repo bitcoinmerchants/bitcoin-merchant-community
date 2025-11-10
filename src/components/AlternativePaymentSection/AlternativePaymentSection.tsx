@@ -106,10 +106,12 @@ const AlternativePaymentSection = () => {
                             transition="opacity 0.2s"
                         >
                             <Image 
-                                src="/assets/CompanyImages/zapriteLogo.png"
+                                src="/assets/CompanyImages/zapriteLogo.svg"
                                 alt="Zaprite"
-                                maxW="160px"
+                                maxW="300px"
                                 h="auto"
+                                width="210px"
+                                filter="brightness(0)"
                             />
                         </Link>
                         <Text 
