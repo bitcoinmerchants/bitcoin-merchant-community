@@ -51,7 +51,7 @@ const Footer = () => {
                         <Flex gap={4} align="center">
                             {/* Facebook */}
                             <Link 
-                                href="https://facebook.com" 
+                                href="https://www.facebook.com/groups/bitcoinmerchantcommunity" 
                                 isExternal
                                 _hover={{ opacity: 0.7 }}
                                 transition="opacity 0.2s"
@@ -65,7 +65,7 @@ const Footer = () => {
 
                             {/* X (Twitter) */}
                             <Link 
-                                href="https://twitter.com" 
+                                href="https://x.com/btc_merchants" 
                                 isExternal
                                 _hover={{ opacity: 0.7 }}
                                 transition="opacity 0.2s"
@@ -79,7 +79,7 @@ const Footer = () => {
 
                             {/* GitHub */}
                             <Link 
-                                href="https://github.com" 
+                                href="https://github.com/bitcoinmerchants" 
                                 isExternal
                                 _hover={{ opacity: 0.7 }}
                                 transition="opacity 0.2s"
@@ -103,6 +103,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bitcoin Merchant Community",
-    url: 'https://www.bitcoin-merchant-community.com/',
+    url: 'bitcoinmerchants.org',
   },
   twitter: {
     card: 'summary_large_image',
@@ -25,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning style={{ scrollBehavior: 'smooth' }}>
       <head>
         <link rel='stylesheet' href='https://use.typekit.net/gaq1ohg.css' />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <Providers>{children}</Providers>
       </body>
     </html>

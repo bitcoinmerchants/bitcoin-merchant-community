@@ -9,7 +9,7 @@ const Header = () => {
                 align="center"
                 justify="space-between"
                 wrap="nowrap" 
-                padding={{ base: "0.5rem 1rem", md: "1.5rem 2rem", lg: "2.5rem 3rem" }}
+                padding={{ base: "1.5rem 1rem", md: "1.5rem 2rem", lg: "2.5rem 3rem" }}
                 color="gray.800"
                 maxW="1450px"
                 mx="auto"
@@ -26,11 +26,15 @@ const Header = () => {
                 {/* Right Side Link */}
                 <Flex align="center">
                     <ChakraLink
-                        href="#"
+                        href="#download-kit"
+                        display={{ base: "none", md: "block" }}
                         fontSize={{ base: "14px", md: "16px", lg: "18px" }}
                         fontWeight="400"
                         color="black"
                         textDecoration="underline"
+                        sx={{
+                            scrollBehavior: 'smooth'
+                        }}
                         _hover={{
                             textDecoration: "none",
                             opacity: 0.8

@@ -6,6 +6,7 @@ import { Box, Heading, Text, Flex, Container, Link, SimpleGrid, Image } from '@c
 const AlternativePaymentSection = () => {
     return (
         <Box 
+            id="alternative-payment"
             bg="white" 
             py={{ base: "60px", md: "80px", lg: "100px" }}
             px={{ base: "20px", md: "40px", lg: "60px" }}
@@ -42,13 +43,21 @@ const AlternativePaymentSection = () => {
                 >
                     {/* IBEX Pay */}
                     <Box>
-                        <Image 
-                            src="/assets/CompanyImages/ibexLogo.png"
-                            alt="IBEX Pay"
-                            maxW="180px"
-                            h="auto"
+                        <Link 
+                            href="https://www.ibexpay.io/"
+                            isExternal
+                            display="inline-block"
                             mb={4}
-                        />
+                            _hover={{ opacity: 0.7 }}
+                            transition="opacity 0.2s"
+                        >
+                            <Image 
+                                src="/assets/CompanyImages/ibexLogo.png"
+                                alt="IBEX Pay"
+                                maxW="180px"
+                                h="auto"
+                            />
+                        </Link>
                         <Text 
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.7"
@@ -61,13 +70,21 @@ const AlternativePaymentSection = () => {
 
                     {/* Blink */}
                     <Box>
-                        <Image 
-                            src="/assets/CompanyImages/blinkLogo.png"
-                            alt="Blink"
-                            maxW="120px"
-                            h="auto"
+                        <Link 
+                            href="https://www.blink.sv/"
+                            isExternal
+                            display="inline-block"
                             mb={4}
-                        />
+                            _hover={{ opacity: 0.7 }}
+                            transition="opacity 0.2s"
+                        >
+                            <Image 
+                                src="/assets/CompanyImages/blinkLogo.png"
+                                alt="Blink"
+                                maxW="120px"
+                                h="auto"
+                            />
+                        </Link>
                         <Text 
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.7"
@@ -80,13 +97,21 @@ const AlternativePaymentSection = () => {
 
                     {/* Zaprite */}
                     <Box>
-                        <Image 
-                            src="/assets/CompanyImages/zapriteLogo.png"
-                            alt="Zaprite"
-                            maxW="160px"
-                            h="auto"
+                        <Link 
+                            href="https://zaprite.com/"
+                            isExternal
+                            display="inline-block"
                             mb={4}
-                        />
+                            _hover={{ opacity: 0.7 }}
+                            transition="opacity 0.2s"
+                        >
+                            <Image 
+                                src="/assets/CompanyImages/zapriteLogo.png"
+                                alt="Zaprite"
+                                maxW="160px"
+                                h="auto"
+                            />
+                        </Link>
                         <Text 
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.7"
@@ -99,13 +124,21 @@ const AlternativePaymentSection = () => {
 
                     {/* Swiss Bitcoin Pay */}
                     <Box>
-                        <Image 
-                            src="/assets/CompanyImages/swissBitcoinLogo.png"
-                            alt="Swiss Bitcoin Pay"
-                            maxW="200px"
-                            h="auto"
+                        <Link 
+                            href="https://swiss-bitcoin-pay.ch/"
+                            isExternal
+                            display="inline-block"
                             mb={4}
-                        />
+                            _hover={{ opacity: 0.7 }}
+                            transition="opacity 0.2s"
+                        >
+                            <Image 
+                                src="/assets/CompanyImages/swissBitcoinLogo.png"
+                                alt="Swiss Bitcoin Pay"
+                                maxW="200px"
+                                h="auto"
+                            />
+                        </Link>
                         <Text 
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.7"
@@ -128,7 +161,7 @@ const AlternativePaymentSection = () => {
                     >
                         <Text as="span" fontWeight="700">Who makes the cut?</Text> We listen to merchants and spotlight solutions that are already popular and have a reputation for easy use. If there's a bitcoin point-of-sale solution we're missing,{' '}
                         <Link 
-                            href="#" 
+                            href="hello@bitcoinmerchants.org" 
                             color="black" 
                             fontWeight="700"
                             textDecoration="underline"
@@ -147,7 +180,7 @@ const AlternativePaymentSection = () => {
                     >
                         If you want to learn more about getting up and running with one of these options, join our friendly{' '}
                         <Link 
-                            href="#" 
+                            href="https://www.facebook.com/groups/bitcoinmerchantcommunity" 
                             color="black" 
                             fontWeight="700"
                             textDecoration="underline"
@@ -164,6 +197,7 @@ const AlternativePaymentSection = () => {
 };
 
 export default AlternativePaymentSection;
+
 
 
 

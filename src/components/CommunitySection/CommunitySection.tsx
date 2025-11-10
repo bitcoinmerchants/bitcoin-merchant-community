@@ -26,9 +26,9 @@ const CommunitySection = () => {
                         alignItems="center"
                     >
                         <Image 
-                            src="/assets/CommunityImages/CommunitySectionImage.png"
+                            src="/assets/CommunityImages/CommunitySectionImage.svg"
                             alt="Bitcoin merchant store"
-                            maxW={{ base: "300px", md: "350px", lg: "500px" }}
+                            maxW={{ base: "350px", md: "350px", lg: "350px" }}
                             w="100%"
                             h="auto"
                         />
@@ -69,6 +69,7 @@ const CommunitySection = () => {
                         </Text>
 
                         <Button
+                            onClick={() => window.open("https://www.facebook.com/groups/bitcoinmerchantcommunity", "_blank")}
                             bg="#FFC533"
                             color="black"
                             fontSize="16px"
@@ -119,7 +120,7 @@ const CommunitySection = () => {
                             </Text>
 
                             <Link 
-                                href="https://btcmap.org" 
+                                href="https://btcmap.org/map" 
                                 isExternal
                                 fontSize={{ base: "16px", md: "20px" }}
                                 fontWeight="700"
@@ -142,6 +143,7 @@ const CommunitySection = () => {
 };
 
 export default CommunitySection;
+
 
 
 

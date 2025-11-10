@@ -7,7 +7,7 @@ const HeroSection = () => {
     return (
         <Box 
             bg="white" 
-            py={{ base: "60px", md: "80px", lg: "80px" }}
+            py={{ base: "30px", md: "80px", lg: "80px" }}
             px={{ base: "20px", md: "40px", lg: "60px" }}
         >
             <Container maxW="1250px">
@@ -15,7 +15,7 @@ const HeroSection = () => {
                     direction={{ base: "column", lg: "row" }}
                     align="center"
                     justify="space-between"
-                    gap={{ base: "40px", lg: "60px" }}
+                    gap={{ base: "0px", md: "20px", lg: "60px" }}
                 >
                     {/* Left Side - Text Content */}
                     <Box 
@@ -27,7 +27,7 @@ const HeroSection = () => {
                             fontSize={{ base: "40px", md: "56px", lg: "70px" }}
                             fontWeight="700"
                             lineHeight="1.1"
-                            mb={12}
+                            mb={{base: "30px", md: "48px", lg: "48px"}}
                             color="black"
                             maxW={{ base: "100%", lg: "550px" }}
                         >
@@ -37,7 +37,7 @@ const HeroSection = () => {
                         <Text 
                             fontSize={{ base: "16px", md: "18px", lg: "20px" }}
                             lineHeight="1.6"
-                            mb={12}
+                            mb={{base: "15px", md: "48px", lg: "48px"}}
                             color="black"
                             maxW={{ base: "100%", lg: "460px" }}
                         >
@@ -61,7 +61,7 @@ const HeroSection = () => {
                         <Image 
                             src="/assets/HeroImages/HeroImage.png"
                             alt="3% melting"
-                            maxW={{ base: "500px", md: "400px", lg: "800px" }}
+                            maxW={{ base: "600px", md: "600px", lg: "800px" }}
                             w="100%"
                             h="auto"
                         />
@@ -69,19 +69,21 @@ const HeroSection = () => {
                 </Flex>
                  {/* Buttons */}
                  <Flex 
-                            gap={{ base: "20px", md: "50px", lg: "20px" }} 
+                            gap={{ base: "20px", md: "30px", lg: "20px" }} 
                             mt={{ base: "40px", md: "50px", lg: "20px" }}
                             direction="row"
                             flexWrap="wrap"
                             align="center"
                         >
                             <Button
+                                as="a"
+                                href="#accept-bitcoin"
                                 bg="#FFC533"
                                 color="black"
                                 fontSize={{ base: "14px", md: "16px", lg: "16px" }}
                                 fontWeight="700"
                                 textTransform="uppercase"
-                                width={{ base: "100%", md: "280px", lg: "326px" }}
+                                width={{ base: "100%", md: "300px", lg: "326px" }}
                                 height="46px"
                                 borderRadius="5px"
                                 border="2px solid #000"
@@ -96,12 +98,13 @@ const HeroSection = () => {
                             </Button>
 
                             <Button
+                                onClick={() => window.open("https://www.facebook.com/groups/bitcoinmerchantcommunity", "_blank")}
                                 bg="white"
                                 color="black"
                                 fontSize={{ base: "14px", md: "16px", lg: "16px" }}
                                 fontWeight="700"
                                 textTransform="uppercase"
-                                width={{ base: "100%", md: "280px", lg: "326px" }}
+                                width={{ base: "100%", md: "300px", lg: "326px" }}
                                 height="46px"
                                 borderRadius="5px"
                                 border="2px solid #000"

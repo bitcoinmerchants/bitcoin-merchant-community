@@ -3,10 +3,6 @@ import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { Global, css } from "@emotion/react";
 
-const colors = {
-  maroon: "#C33F82",
-};
-
 const fonts = {
   heading: "'Inter', sans-serif",
   body: "'Inter', sans-serif",
@@ -25,7 +21,7 @@ const components = {
   },
 };
 
-export const theme = extendTheme({ colors, fonts, components });
+export const theme = extendTheme({ fonts, components });
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (

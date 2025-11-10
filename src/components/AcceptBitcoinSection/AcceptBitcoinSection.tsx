@@ -6,6 +6,7 @@ import { Box, Heading, Text, Flex, Container, Link, UnorderedList, ListItem, Ima
 const AcceptBitcoinSection = () => {
     return (
         <Box
+            id="accept-bitcoin"
             bg="white"
             py={{ base: "60px", md: "80px", lg: "100px" }}
             px={{ base: "20px", md: "40px", lg: "60px" }}
@@ -42,7 +43,7 @@ const AcceptBitcoinSection = () => {
                     >
                         Not a Square merchant?{' '}
                         <Link
-                            href="#"
+                            href="#alternative-payment"
                             color="black"
                             fontWeight="700"
                             textDecoration="underline"
@@ -78,7 +79,7 @@ const AcceptBitcoinSection = () => {
                             mb={4}
                             color="black"
                         >
-                            Bitcoin payments on Square registers integrate directly with your existing merchant setup.
+                            Bitcoin payments on Square hardware integrate directly with your existing merchant setup.
                         </Text>
 
                         <Text
@@ -108,7 +109,7 @@ const AcceptBitcoinSection = () => {
                                 lineHeight="1.7"
                                 color="black"
                             >
-                                Go to your Dashboard and click Accept bitcoin.
+                                Next to Bitcoin, tap Activate and complete 2-step verification if you haven’t already. 
                             </ListItem>
                             <ListItem
                                 fontSize={{ base: "16px", md: "20px" }}
@@ -142,7 +143,7 @@ const AcceptBitcoinSection = () => {
                         >
                             Learn more about bitcoin on{' '}
                             <Link
-                                href="https://squareup.com/us/en/payments/crypto"
+                                href="https://squareup.com/us/en/bitcoin"
                                 isExternal
                                 color="black"
                                 fontWeight="700"
@@ -161,7 +162,7 @@ const AcceptBitcoinSection = () => {
                         >
                             Once you're up and running, you can get a Bitcoin Marketing Kit from the{' '}
                             <Link
-                                href="https://squareup.com/shop/bitcoin-marketing-kit"
+                                href="https://squareup.com/shop/hardware/us/en/products/bitcoin-marketing-kit"
                                 isExternal
                                 color="black"
                                 fontWeight="700"

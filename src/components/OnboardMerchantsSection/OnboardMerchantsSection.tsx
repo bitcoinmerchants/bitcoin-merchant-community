@@ -7,6 +7,7 @@ import { DownloadIcon } from '@chakra-ui/icons';
 const OnboardMerchantsSection = () => {
     return (
         <Box 
+            id="download-kit"
             bg="#F5F5F5" 
             py={{ base: "60px", md: "80px", lg: "100px" }}
             px={{ base: "20px", md: "40px", lg: "60px" }}
