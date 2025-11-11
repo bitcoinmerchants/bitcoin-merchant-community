@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Bitcoin Merchant Community',
     images: [
       {
-        url: '/assets/og-image.png', // 1200x630px recommended
+        url: 'https://www.bitcoinmerchantcommunity.org/assets/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Bitcoin Merchant Community',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Bitcoin Merchant Community",
     description: "The Bitcoin Merchant Community is a growing global community of small businesses helping one another defeat 3% credit card fees by accepting bitcoin",
-    images: ['/assets/og-image.png'], // Same image works for Twitter
+    images: ['https://www.bitcoinmerchantcommunity.org/assets/og-image.png'],
   },
   viewport: 'width=device-width, minimum-scale=1.0, maximum-scale=1.0',
 };
