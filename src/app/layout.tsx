@@ -29,7 +29,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Bitcoin Merchant Community",
     description: "The Bitcoin Merchant Community is a growing global community of small businesses helping one another defeat 3% credit card fees by accepting bitcoin",
-    images: ['https://www.bitcoinmerchantcommunity.org/assets/og-image.png'],
+    images: {
+      url: 'https://www.bitcoinmerchantcommunity.org/assets/og-image.png',
+      alt: 'Bitcoin Merchant Community',
+    },
   },
   viewport: 'width=device-width, minimum-scale=1.0, maximum-scale=1.0',
 };
