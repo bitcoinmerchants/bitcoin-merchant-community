@@ -64,6 +64,12 @@ const ReceiveBitcoinSection = () => {
                             maxW={{ base: "220px", sm: "280px", md: "350px", lg: "350px", xl: "400px" }}
                             w="100%"
                             h="auto"
+                            loading="eager"
+                            style={{ 
+                                imageRendering: '-webkit-optimize-contrast',
+                                transform: 'translateZ(0)',
+                                backfaceVisibility: 'hidden'
+                            }}
                         />
                     </Box>
                 </Flex>

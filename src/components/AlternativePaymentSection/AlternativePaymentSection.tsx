@@ -111,6 +111,12 @@ const AlternativePaymentSection = () => {
                                 maxW="300px"
                                 h="auto"
                                 width="210px"
+                                loading="eager"
+                                style={{ 
+                                    imageRendering: '-webkit-optimize-contrast',
+                                    transform: 'translateZ(0)',
+                                    backfaceVisibility: 'hidden'
+                                }}
                             />
                         </Link>
                         <Text 

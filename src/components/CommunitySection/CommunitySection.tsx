@@ -136,6 +136,12 @@ const CommunitySection = () => {
                             maxW={{ base: "250px", sm: "300px", md: "350px", lg: "350px", xl: "350px" }}
                             w="100%"
                             h="auto"
+                            loading="eager"
+                            style={{ 
+                                imageRendering: '-webkit-optimize-contrast',
+                                transform: 'translateZ(0)',
+                                backfaceVisibility: 'hidden'
+                            }}
                         />
                     </Box>
                 </Flex>

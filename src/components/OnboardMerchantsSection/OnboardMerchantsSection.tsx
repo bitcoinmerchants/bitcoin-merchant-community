@@ -32,6 +32,12 @@ const OnboardMerchantsSection = () => {
                             maxW={{ base: "200px", sm: "250px", md: "300px", lg: "300px", xl: "350px" }}
                             w="100%"
                             h="auto"
+                            loading="eager"
+                            style={{ 
+                                imageRendering: '-webkit-optimize-contrast',
+                                transform: 'translateZ(0)',
+                                backfaceVisibility: 'hidden'
+                            }}
                         />
                     </Box>
 

@@ -63,6 +63,12 @@ const AcceptBitcoinSection = () => {
                         maxW="300px"
                         width="210px"
                         h="auto"
+                        loading="eager"
+                        style={{ 
+                            imageRendering: '-webkit-optimize-contrast',
+                            transform: 'translateZ(0)',
+                            backfaceVisibility: 'hidden'
+                        }}
                     />
                 </Box>
 

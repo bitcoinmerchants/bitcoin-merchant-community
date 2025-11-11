@@ -64,6 +64,12 @@ const CreditCardSection = () => {
                             maxW={{ base: "250px", sm: "300px", md: "400px", lg: "450px", xl: "400px" }}
                             w="100%"
                             h="auto"
+                            loading="eager"
+                            style={{ 
+                                imageRendering: '-webkit-optimize-contrast',
+                                transform: 'translateZ(0)',
+                                backfaceVisibility: 'hidden'
+                            }}
                         />
                     </Box>
                 </Flex>
