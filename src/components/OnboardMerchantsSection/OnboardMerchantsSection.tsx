@@ -28,7 +28,7 @@ const OnboardMerchantsSection = () => {
                     >
                         <Box
                             as="img"
-                            src="/assets/OnboardMerchantsImages/AcceptBitcoinImage.svg"
+                            src="/assets/OnboardMerchantsImages/AcceptBitcoinImage.png"
                             alt="Accept Bitcoin sticker"
                             maxW={{ base: "200px", sm: "250px", md: "300px", lg: "300px", xl: "350px" }}
                             w="100%"

@@ -60,7 +60,7 @@ const CreditCardSection = () => {
                     >
                         <Box
                             as="img"
-                            src="/assets/CreditCardImages/CreditCardImage.svg"
+                            src="/assets/CreditCardImages/CreditCardImage.png"
                             alt="Broken credit card"
                             maxW={{ base: "250px", sm: "300px", md: "400px", lg: "450px", xl: "400px" }}
                             w="100%"

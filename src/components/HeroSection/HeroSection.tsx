@@ -63,15 +63,10 @@ const HeroSection = () => {
                     >
                         <Box
                             as="img"
-                            src="/assets/HeroImages/HeroImage.svg"
+                            src="/assets/HeroImages/HeroImage.png"
                             alt="3% melting"
                             width="100%"
                             height="auto"
-                            sx={{
-                                imageRendering: 'auto',
-                                WebkitUserSelect: 'none',
-                                userSelect: 'none',
-                            }}
                         />
                     </Box>
                 </Flex>
