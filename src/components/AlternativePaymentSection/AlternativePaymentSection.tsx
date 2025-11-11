@@ -111,6 +111,8 @@ const AlternativePaymentSection = () => {
                                 maxW="300px"
                                 h="auto"
                                 width="210px"
+                                loading="eager"
+                                draggable={false}
                             />
                         </Link>
                         <Text 

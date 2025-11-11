@@ -3,6 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://bitcoinmerchants.org'),
   title: "Bitcoin Merchant Community",
   description: "Bitcoin Merchant Community - Connect, Learn, and Grow with Bitcoin Payments",
   icons: {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bitcoin Merchant Community",
-    url: 'bitcoinmerchants.org',
+    url: 'https://bitcoinmerchants.org',
   },
   twitter: {
     card: 'summary_large_image',
@@ -28,6 +29,9 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning style={{ scrollBehavior: 'smooth' }}>
       <head>
         <link rel='stylesheet' href='https://use.typekit.net/gaq1ohg.css' />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       </head>
       <body suppressHydrationWarning>
         <Providers>{children}</Providers>

@@ -130,12 +130,18 @@ const CommunitySection = () => {
                         alignItems="center"
                         order={{ base: 2, xl: 1 }}
                     >
-                        <Image 
-                            src="/assets/CommunityImages/CommunitySectionImage.svg"
+                        <Box
+                            as="img"
+                            src="/assets/CommunityImages/CommunitySectionImage.png"
                             alt="Bitcoin merchant store"
                             maxW={{ base: "250px", sm: "300px", md: "350px", lg: "350px", xl: "350px" }}
                             w="100%"
                             h="auto"
+                            sx={{
+                                imageRendering: 'auto',
+                                WebkitUserSelect: 'none',
+                                userSelect: 'none',
+                            }}
                         />
                     </Box>
                 </Flex>

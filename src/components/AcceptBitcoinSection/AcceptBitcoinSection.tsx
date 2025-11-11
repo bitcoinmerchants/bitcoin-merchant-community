@@ -63,6 +63,8 @@ const AcceptBitcoinSection = () => {
                         maxW="300px"
                         width="210px"
                         h="auto"
+                        loading="eager"
+                        draggable={false}
                     />
                 </Box>
 

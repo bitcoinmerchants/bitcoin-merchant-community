@@ -58,12 +58,18 @@ const CreditCardSection = () => {
                         justifyContent="center"
                         alignItems="center"
                     >
-                        <Image 
-                            src="/assets/CreditCardImages/CreditCardImage.svg"
+                        <Box
+                            as="img"
+                            src="/assets/CreditCardImages/CreditCardImage.png"
                             alt="Broken credit card"
                             maxW={{ base: "250px", sm: "300px", md: "400px", lg: "450px", xl: "400px" }}
                             w="100%"
                             h="auto"
+                            sx={{
+                                imageRendering: 'auto',
+                                WebkitUserSelect: 'none',
+                                userSelect: 'none',
+                            }}
                         />
                     </Box>
                 </Flex>
