@@ -181,7 +181,7 @@ const AlternativePaymentSection = () => {
                             <Image
                                 src="/assets/CompanyImages/blinkLogo.png"
                                 alt="Blink"
-                                maxW="120px"
+                                maxW="200px"
                                 h="auto"
                             />
                         </Link>
