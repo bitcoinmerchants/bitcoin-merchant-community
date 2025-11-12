@@ -27,20 +27,29 @@ const OnboardMerchantsSection = () => {
                         alignItems="center"
                         order={{ base: 2, xl: 1 }}
                     >
-                        <Box
-                            as="img"
-                            src="/assets/OnboardMerchantsImages/marketingKit.png"
-                            alt="marketing kit"
-                            maxW={{ base: "200px", sm: "250px", md: "250px", lg: "300px", xl: "300px" }}
-                            w="100%"
-                            h="auto"
-                            filter="drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.25))"
-                            sx={{
-                                imageRendering: 'auto',
-                                WebkitUserSelect: 'none',
-                                userSelect: 'none',
-                            }}
-                        />
+                        <Link
+                            href="https://raw.githubusercontent.com/bitcoinmerchants/marketing-assets/main/Merchant%20Onboarding%20Kit.pdf"
+                            download="Merchant_Onboarding_Kit.pdf"
+                            isExternal
+                            _hover={{ opacity: 0.8 }}
+                            transition="opacity 0.2s"
+                        >
+                            <Box
+                                as="img"
+                                src="/assets/OnboardMerchantsImages/marketingKit.png"
+                                alt="marketing kit"
+                                maxW={{ base: "200px", sm: "250px", md: "250px", lg: "300px", xl: "300px" }}
+                                w="100%"
+                                h="auto"
+                                filter="drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.25))"
+                                cursor="pointer"
+                                sx={{
+                                    imageRendering: 'auto',
+                                    WebkitUserSelect: 'none',
+                                    userSelect: 'none',
+                                }}
+                            />
+                        </Link>
                     </Box>
 
                     {/* Right Side - Text Content */}
