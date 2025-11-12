@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Box, Heading, Text, Flex, Container, Link, UnorderedList, ListItem, Image } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, Container, Link, UnorderedList, ListItem, Image, List } from '@chakra-ui/react';
 
 const AcceptBitcoinSection = () => {
     return (
@@ -82,7 +82,8 @@ const AcceptBitcoinSection = () => {
                             mb={4}
                             color="black"
                         >
-                            Bitcoin payments on Square hardware integrate directly with your existing merchant setup.
+                            Bitcoin payments on Square integrate with your existing merchant setup. To turn them on, follow the steps below either on your Square point-of-sale device or on web:
+
                         </Text>
 
                         <Text
@@ -92,36 +93,98 @@ const AcceptBitcoinSection = () => {
                             color="black"
                             fontWeight="700"
                         >
-                            To turn them on, follow these steps:
+                            On your Square POS device:
                         </Text>
 
                         <UnorderedList
                             spacing={3}
                             pl={5}
-                            styleType="decimal"
+                            mb={4}
                         >
                             <ListItem
                                 fontSize={{ base: "16px", md: "20px" }}
                                 lineHeight="1.4"
                                 color="black"
                             >
-                                You'll first need to complete the setup of your bitcoin wallet from the Banking {'>'} Bitcoin tab of Square Dashboard.
+                                If you’re running Square hardware, make sure you’re on the  
+                                {' '}
+                                <Link
+                                    href="https://squareup.com/help/us/en/article/8346-update-software-on-square-terminal-and-square-register"
+                                    isExternal
+                                    color="black"
+                                    fontWeight="700"
+                                    textDecoration="underline"
+                                    _hover={{ color: "#00A651" }}
+                            >
+                                latest POS software 
+                                </Link>
+                                 {' '}
+                                (6.81+). 
+                                If running Square on an iPad, get the latest app from the App Store.
                             </ListItem>
                             <ListItem
                                 fontSize={{ base: "16px", md: "20px" }}
                                 lineHeight="1.4"
                                 color="black"
                             >
-                                Next to Bitcoin, tap Activate and complete 2-step verification if you haven't already. In some cases, you may need to provide additional information about your business.
+                                Go to Settings {'>'} Checkout {'>'} Payments {'>'} Activate Bitcoin.
                             </ListItem>
                             <ListItem
                                 fontSize={{ base: "16px", md: "20px" }}
                                 lineHeight="1.4"
                                 color="black"
                             >
-                                Choose how you'd like to receive payment.
+                                You will be re-directed to mobile web to complete the process.
                             </ListItem>
                         </UnorderedList>
+
+                        <Text
+                            fontSize={{ base: "16px", md: "20px" }}
+                            lineHeight="1.4"
+                            mb={4}
+                            color="black"
+                            fontWeight="700"
+                        >
+                            On web:
+                        </Text>
+
+                        <UnorderedList
+                            spacing={3}
+                            pl={5}
+                            mb={4}
+                        >
+                            <ListItem
+                                fontSize={{ base: "16px", md: "20px" }}
+                                lineHeight="1.4"
+                                color="black"
+                            >
+                                From your Dashboard, tap on Banking {'>'} Bitcoin, then “Get Started”.
+                            </ListItem>
+                            <ListItem
+                                fontSize={{ base: "16px", md: "20px" }}
+                                lineHeight="1.4"
+                                color="black"
+                            >
+                                You will be prompted to set up conversions (i.e. automatically converting some of your sales to bitcoin) and/or bitcoin payments (i.e. allowing customers to pay using bitcoin).
+                            </ListItem>
+                            <ListItem
+                                fontSize={{ base: "16px", md: "20px" }}
+                                lineHeight="1.4"
+                                color="black"
+                            >
+                                You will be re-directed to mobile web to complete the process.
+                            </ListItem>
+                        </UnorderedList>
+
+                        <Text
+                            fontSize={{ base: "16px", md: "20px" }}
+                            lineHeight="1.4"
+                            mb={4}
+                            color="black"
+                        >
+                            From there, you may need to enter more information about your business and enable two-factor authentication (2FA) if it’s not already set up.
+                        </Text>
+
                     </Box>
 
                     {/* Right Column - Payment Options */}
@@ -132,69 +195,100 @@ const AcceptBitcoinSection = () => {
                         <Text
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.4"
-                            mb={5}
+                            mb={4}
                             color="black"
                         >
-                            When customers pay with bitcoin, you can choose to have those payments flow directly into your bitcoin wallet or, if you prefer, have those payments automatically convert to dollars, which requires no new accounting or tax work. It's just business as usual, but without the 3% fees.
-                        </Text>
-
-
-                        <Text
-                            fontSize={{ base: "16px", md: "20px" }}
-                            lineHeight="1.4"
-                            mb={5}
-                            color="black"
-                        >
-                            This {' '}
-                            <Link
-                                href="https://youtu.be/HnOzE5nNegI?si=734Pe7iHWKNErBf6"
-                                isExternal
-                                color="black"
-                                fontWeight="700"
-                                textDecoration="underline"
-                                _hover={{ color: "#00A651" }}
-                            >
-                                video walkthrough
-                            </Link>
-                            {' '} can help you get set up.
+                            Finally, you will be asked if you want to settle payments in dollars or in bitcoin.                       
                         </Text>
                         <Text
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.4"
-                            mb={5}
+                            mb={4}
                             color="black"
                         >
-                            Learn more about bitcoin on{' '}
-                            <Link
-                                href="https://squareup.com/us/en/bitcoin"
-                                isExternal
+                            This means that when customers pay with bitcoin, you can choose to either have those payments:
+                        </Text>
+                        <List
+                            spacing={3}
+                            pl={5}
+                            mb={4}
+                            styleType="decimal"
+                        >
+                            <ListItem
+                                fontSize={{ base: "16px", md: "20px" }}
+                                lineHeight="1.4"
                                 color="black"
-                                fontWeight="700"
-                                textDecoration="underline"
-                                _hover={{ color: "#00A651" }}
                             >
-                                Square's website
-                            </Link>
-                            .
+                                Flow directly into your Square bitcoin wallet, or
+                            </ListItem>
+                            <ListItem
+                                fontSize={{ base: "16px", md: "20px" }}
+                                lineHeight="1.4"
+                                color="black"
+                            >
+                                Automatically convert to dollars, which requires no new accounting or tax work—just business as usual, but without the 3% fees.
+                            </ListItem>
+                        </List>
+
+                        <Text
+                            fontSize={{ base: "16px", md: "20px" }}
+                            lineHeight="1.4"
+                            mb={4}
+                            color="black"
+                        >
+                            You can then decide whether or not you’d like your business to appear on a map of merchants that accept bitcoin.
                         </Text>
 
                         <Text
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.4"
+                            mb={4}
                             color="black"
                         >
-                            Once you're up and running, you can get a Bitcoin Marketing Kit from the{' '}
-                            <Link
-                                href="https://squareup.com/shop/hardware/us/en/products/bitcoin-marketing-kit"
-                                isExternal
-                                color="black"
-                                fontWeight="700"
-                                textDecoration="underline"
-                                _hover={{ color: "#00A651" }}
-                            >
-                                Square Shop
-                            </Link>
-                            {' '}at no cost other than shipping.
+                            You can now receive your first bitcoin payment.
+                        </Text>
+
+                        <Text
+                            fontSize={{ base: "16px", md: "20px" }}
+                            lineHeight="1.4"
+                            mb={4}
+                            color="black"
+                        >
+                            This 
+                            {' '}
+                                <Link
+                                    href="https://squareup.com/us/en/the-bottom-line/inside-square/getting-started-with-bitcoin-on-square"
+                                    isExternal
+                                    color="black"
+                                    fontWeight="700"
+                                    textDecoration="underline"
+                                    _hover={{ color: "#00A651" }}
+                                >
+                                beginner’s guide
+                                </Link>
+                            {' '}
+                             can help you get set up.
+                        </Text>
+                        <Text
+                            fontSize={{ base: "16px", md: "20px" }}
+                            lineHeight="1.4"
+                            mb={4}
+                            color="black"
+                        >
+                            Once you're up and running, you can get a Bitcoin Marketing Kit from 
+                            {' '}
+                                <Link
+                                    href="https://squareup.com/shop/hardware/us/en/products/bitcoin-marketing-kit"
+                                    isExternal
+                                    color="black"
+                                    fontWeight="700"
+                                    textDecoration="underline"
+                                    _hover={{ color: "#00A651" }}
+                                >
+                            Square Shop 
+                                </Link>
+                            {' '}
+                            for free.
                         </Text>
                     </Box>
                 </Flex>
