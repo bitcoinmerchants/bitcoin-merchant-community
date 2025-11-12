@@ -29,7 +29,7 @@ const OnboardMerchantsSection = () => {
                     >
                         <Box
                             as="img"
-                            src="/assets/OnboardMerchantsImages/marketingkit.png"
+                            src="/assets/OnboardMerchantsImages/marketingKit.png"
                             alt="marketing kit"
                             maxW={{ base: "200px", sm: "250px", md: "250px", lg: "300px", xl: "300px" }}
                             w="100%"
