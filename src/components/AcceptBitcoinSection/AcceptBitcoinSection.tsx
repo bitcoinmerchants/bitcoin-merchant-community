@@ -112,7 +112,7 @@ const AcceptBitcoinSection = () => {
                                 lineHeight="1.4"
                                 color="black"
                             >
-                                Next to Bitcoin, tap Activate and complete 2-step verification if you haven't already. 
+                                Next to Bitcoin, tap Activate and complete 2-step verification if you haven't already. In some cases, you may need to provide additional information about your business.
                             </ListItem>
                             <ListItem
                                 fontSize={{ base: "16px", md: "20px" }}
@@ -138,6 +138,26 @@ const AcceptBitcoinSection = () => {
                             When customers pay with bitcoin, you can choose to have those payments flow directly into your bitcoin wallet or, if you prefer, have those payments automatically convert to dollars, which requires no new accounting or tax work. It's just business as usual, but without the 3% fees.
                         </Text>
 
+
+                        <Text
+                            fontSize={{ base: "16px", md: "20px" }}
+                            lineHeight="1.4"
+                            mb={5}
+                            color="black"
+                        >
+                            This {' '}
+                            <Link
+                                href="https://youtu.be/HnOzE5nNegI?si=734Pe7iHWKNErBf6"
+                                isExternal
+                                color="black"
+                                fontWeight="700"
+                                textDecoration="underline"
+                                _hover={{ color: "#00A651" }}
+                            >
+                                video walkthrough
+                            </Link>
+                            {' '} can help you get set up.
+                        </Text>
                         <Text
                             fontSize={{ base: "16px", md: "20px" }}
                             lineHeight="1.4"

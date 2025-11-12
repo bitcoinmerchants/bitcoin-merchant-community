@@ -220,6 +220,7 @@ const AlternativePaymentSection = () => {
                         lineHeight="1.4"
                         color="black"
                         maxW="450px"
+                        mb={5}
                     >
                         If you want to learn more about getting up and running with one of these options, join our friendly{' '}
                         <Link 
@@ -232,6 +233,23 @@ const AlternativePaymentSection = () => {
                             Facebook Group
                         </Link>
                         .
+                    </Text>
+                    <Text 
+                        fontSize={{ base: "16px", md: "20px" }}
+                        lineHeight="1.4"
+                        color="black"
+                        maxW="450px"
+                        mb={5}
+                    >
+                        Since there’s a chance that your existing point-of-sale provider doesn’t accept bitcoin payments at this time, reach out and ask them to add support. Be the squeaky wheel.
+                    </Text>
+                    <Text 
+                        fontSize={{ base: "16px", md: "20px" }}
+                        lineHeight="1.4"
+                        color="black"
+                        maxW="450px"
+                    >
+                        For now, we’re focused on highlighting POS solutions that work well for in-person commerce. Over time, we’ll add options for e‑commerce and professional services.
                     </Text>
                 </Box>
             </Container>
