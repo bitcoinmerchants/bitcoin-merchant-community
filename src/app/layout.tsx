@@ -45,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning style={{ scrollBehavior: 'smooth' }}>
       <head>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="6395c060-67aa-4094-978d-917c9551b8e4"></script>
         <link rel='stylesheet' href='https://use.typekit.net/gaq1ohg.css' />
         <meta name="format-detection" content="telephone=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
