@@ -129,13 +129,6 @@ const AcceptBitcoinSection = () => {
                             >
                                 Go to Settings {'>'} Checkout {'>'} Payments {'>'} Activate Bitcoin.
                             </ListItem>
-                            <ListItem
-                                fontSize={{ base: "16px", md: "20px" }}
-                                lineHeight="1.4"
-                                color="black"
-                            >
-                                You will be re-directed to mobile web to complete the process.
-                            </ListItem>
                         </UnorderedList>
 
                         <Text
@@ -165,14 +158,7 @@ const AcceptBitcoinSection = () => {
                                 lineHeight="1.4"
                                 color="black"
                             >
-                                You will be prompted to set up conversions (i.e. automatically converting some of your sales to bitcoin) and/or bitcoin payments (i.e. allowing customers to pay using bitcoin).
-                            </ListItem>
-                            <ListItem
-                                fontSize={{ base: "16px", md: "20px" }}
-                                lineHeight="1.4"
-                                color="black"
-                            >
-                                You will be re-directed to mobile web to complete the process.
+                                You will first be prompted to set up conversions, which you can skip for now if all you want is customers to pay in bitcoin.
                             </ListItem>
                         </UnorderedList>
 
@@ -226,7 +212,7 @@ const AcceptBitcoinSection = () => {
                                 lineHeight="1.4"
                                 color="black"
                             >
-                                Automatically convert to dollars, which requires no new accounting or tax work—just business as usual, but without the 3% fees.
+                                Automatically convert to dollars (with no cost or spread), which requires no new accounting or tax work—just business as usual, but without the 3% fees.
                             </ListItem>
                         </List>
 
